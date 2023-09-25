@@ -1,0 +1,162 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a base font and styles for the entire document */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #141414; /* Use a darker background color */
+  color: #000000; /* Set text color to white for better contrast */
+}
+
+nav {
+  font-family: "Lucida Console", monospace;
+  color: #676363; /* Adjusted text color for readability */
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10%;
+  padding: 3%;
+  background-color: #3a0073;
+}
+
+nav .array_inputs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0;
+  color: rgb(221, 115, 214);
+}
+
+nav .array_inputs #arr_size,
+nav .array_inputs #arr_speed {
+  padding: 5% 0;
+}
+
+nav .array_inputs #arr_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(115, 221, 152);
+  padding: 10% 0 0 10%; /* Adjusted left padding for better alignment */
+  margin-left:70px ;
+  font-size: medium;
+}
+
+nav .array_inputs #arr_generate:hover {
+  cursor: pointer;
+  color: rgb(255, 113, 84); /* Adjusted hover color */
+}
+
+/* nav .header_right {
+  display: flex;
+  flex-direction: column; /* Simplified flex direction */
+/* } */
+
+/* nav .header_right .nav-heading { */
+  /* display: inline-block; */
+  /* font-size: 24px; Increased font size for headings */
+  /* padding: 3% 0; */
+/* } */ 
+
+nav .header_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the contents */
+  justify-content: center; /* Vertically center the contents */
+}
+
+nav .header_right .nav-heading {
+  font-size: 30px;
+  padding: 3% 0;
+  color: rgb(190, 190, 6)
+}
+
+nav .header_right .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: 1px solid rgb(156, 156, 156);;
+  border-radius: 50px;
+  color: rgb(217, 217, 18);
+  outline: none;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+nav .header_right .algos button:hover {
+  background-color: rgb(255, 113, 84); /* Adjusted hover background color */
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked,
+nav .header_right .algos .butt_locked:hover,
+nav .header_right .algos .butt_selected,
+nav .header_right .algos .butt_selected:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: rgb(200, 69, 69); /* Specify a color for unselected buttons */
+  cursor: pointer;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section .Complexity_Containers,
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+
+section #Info_Cont1,
+section #Info_Cont2 {
+  padding: 20% 10%;
+  color: rgb(255, 113, 84);
+}
+
+section #Info_Cont1 h3,
+section #Info_Cont2 h3 {
+  text-decoration: underline;
+  
+}
+
+/* #array_container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+} */
+
+#array_container {
+  display: flex;
+  justify-content: flex-end; /* Adjusted to place bars at the bottom */
+  align-items: flex-end; /* Adjusted to place bars at the bottom */
+  width: 100%;
+  height: 50vh;
+}
+
+.hide {
+  display: none;
+}
